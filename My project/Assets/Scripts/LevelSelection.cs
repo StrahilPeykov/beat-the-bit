@@ -10,7 +10,7 @@ public class LevelSelection : MonoBehaviour
 
     public void PlayButton()
     {
-        SceneManager.LoadScene("Level Selection");
+        SceneManager.LoadScene("LevelSelection");
     }
 
     // Quit the game
