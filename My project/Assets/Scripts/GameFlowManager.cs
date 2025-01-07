@@ -11,7 +11,11 @@ public class GameFlowManager : MonoBehaviour
     public Button nextButton;
     public Button submitButton;
     public TextMeshProUGUI feedbackText;
-
+    public TextMeshProUGUI timerText;
+    public Button retryButton;
+    public Button revealAlgorithmButton;
+    public GameObject algorithmPopup;
+    public TextMeshProUGUI algorithmPopupText;
 
     [Header("Game Messages")]
     public string welcomeMessage = "Welcome to the Cipher Challenge!";
@@ -19,69 +23,173 @@ public class GameFlowManager : MonoBehaviour
     public string cipherMessage = "Cipher: opdtryqzcrlxpdmfwrlctllyoczxlytl";
     private string correctDecryption = "designforgamesbulgariaandromania";
 
+    [Header("Timer Settings")]
+    public float roundTimer = 60f;
+    private float timer = 1f;
+    private bool isTimerRunning = false;
+
+    [Header("Audio Settings")]
+    public AudioSource audioSource;
+    public AudioClip timerTickAudio;
+
+    [Header("Algorithm Details")]
+    public string algorithmDescription = "This is a simple substitution cipher with a static key.";
+
+
     void Start()
-        {
-            InitializeWelcomeScreen();
-        }
+    {
+        InitializeWelcomeScreen();
+    }
 
-        void InitializeWelcomeScreen()
-        {
-            welcomeText.text = welcomeMessage + "\n\n" + instructions;
-            welcomeText.gameObject.SetActive(true);
-            cipherText.gameObject.SetActive(false);
-            inputField.gameObject.SetActive(false);
-            submitButton.gameObject.SetActive(false);
-            feedbackText.gameObject.SetActive(false);
-            nextButton.gameObject.SetActive(true);
+    void InitializeWelcomeScreen()
+    {
+        roundTimer = 60f;
+        timer = 1f;
+        isTimerRunning = false;
 
-            SetButtonText(nextButton, "Next");
-            SetButtonText(submitButton, "Submit");
+        welcomeText.text = welcomeMessage + "\n\n" + instructions;
+        welcomeText.gameObject.SetActive(true);
+        cipherText.gameObject.SetActive(false);
+        inputField.gameObject.SetActive(false);
+        submitButton.gameObject.SetActive(false);
+        feedbackText.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
+        nextButton.gameObject.SetActive(true);
+        retryButton.gameObject.SetActive(false);
+        revealAlgorithmButton.gameObject.SetActive(false); // Hide the button initially
+        algorithmPopup.SetActive(false); // Hide the popup initially
 
-            nextButton.onClick.AddListener(ShowCipherScreen);
-        }
+        SetButtonText(nextButton, "Next");
+        SetButtonText(submitButton, "Submit");
+        SetButtonText(retryButton, "Retry");
+        SetButtonText(revealAlgorithmButton, "Reveal Algorithm");
 
-        void ShowCipherScreen()
+        nextButton.onClick.RemoveAllListeners();
+        nextButton.onClick.AddListener(StartGame);
+    }
+
+    void StartGame()
+    {
+        welcomeText.gameObject.SetActive(false);
+        cipherText.text = cipherMessage;
+        cipherText.gameObject.SetActive(true);
+        inputField.gameObject.SetActive(true);
+        submitButton.gameObject.SetActive(true);
+        feedbackText.gameObject.SetActive(true);
+        feedbackText.text = "";
+        timerText.gameObject.SetActive(true);
+        isTimerRunning = true;
+        nextButton.gameObject.SetActive(false);
+        revealAlgorithmButton.gameObject.SetActive(true);
+
+        submitButton.onClick.RemoveAllListeners();
+        submitButton.onClick.AddListener(CheckDecryption);
+
+        revealAlgorithmButton.onClick.RemoveAllListeners();
+        revealAlgorithmButton.onClick.AddListener(ShowAlgorithmPopup);
+
+    }
+
+    void Update()
+    {
+        if (isTimerRunning)
         {
-            welcomeText.gameObject.SetActive(false);
-            cipherText.text = cipherMessage;
-            cipherText.gameObject.SetActive(true);
-            inputField.gameObject.SetActive(true);
-            submitButton.gameObject.SetActive(true);
-            feedbackText.gameObject.SetActive(true);
-            feedbackText.text = "";
-            nextButton.gameObject.SetActive(false);
-            submitButton.onClick.AddListener(CheckDecryption);
-        }
-        private void SetButtonText(Button button, string text)
-        {
-            TextMeshProUGUI buttonText = button.GetComponentInChildren<TextMeshProUGUI>();
-            if (buttonText != null)
+            timer -= Time.deltaTime;
+
+            if (timer <= 0 && roundTimer > 0)
             {
-                buttonText.text = text;
+                audioSource.PlayOneShot(timerTickAudio, 0.30f);
+                timer = 1f;
+                roundTimer -= 1f;
+                DisplayTime(roundTimer);
+            }
+            if (roundTimer <= 0)
+            {
+                isTimerRunning = false;
+                EndGame("Time's up! You've run out of time!", Color.red);
             }
         }
+    }
 
-        void CheckDecryption()
+    void DisplayTime(float timeToDisplay)
+    {
+        int minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        int seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        if (timeToDisplay <= 15f)
         {
-            string playerGuess = inputField.text;
-
-            if (string.IsNullOrEmpty(playerGuess))
-            {
-                feedbackText.text = "Please enter a guess.";
-                feedbackText.color = Color.yellow;
-                return;
-            }
-
-            if (playerGuess == correctDecryption)
-            {
-                feedbackText.text = "Correct! You've decrypted the message!";
-                feedbackText.color = Color.green;
-            }
-            else
-            {
-                feedbackText.text = "Incorrect. Try again!";
-                feedbackText.color = Color.red;
-                inputField.text = "";
-            }
+            timerText.color = Color.red;
         }
+        Color greenColor;
+        if (ColorUtility.TryParseHtmlString("#20C20E", out greenColor))
+            {
+                timerText.color = greenColor;
+            }
+    }
+
+    void ShowAlgorithmPopup()
+    {
+        algorithmPopupText.text = algorithmDescription;
+        algorithmPopup.SetActive(true);
+        Invoke(nameof(HideAlgorithmPopup), 5f);
+    }
+    void HideAlgorithmPopup()
+    {
+        algorithmPopup.SetActive(false);
+    }
+
+    void CheckDecryption()
+    {
+        string playerGuess = inputField.text;
+
+        if (string.IsNullOrEmpty(playerGuess))
+        {
+            feedbackText.text = "Please enter a guess.";
+            feedbackText.color = Color.yellow;
+            return;
+        }
+
+        if (playerGuess == correctDecryption)
+        {
+            feedbackText.text = "Correct! You've decrypted the message!";
+            feedbackText.color = Color.green;
+            isTimerRunning = false;
+            EndGame("Congratulations! You've decrypted the cipher!", Color.green);
+        }
+        else
+        {
+            feedbackText.text = "Incorrect. Try again!";
+            feedbackText.color = Color.red;
+            inputField.text = "";
+        }
+    }
+
+    void EndGame(string endMessage, Color color)
+    {
+        isTimerRunning = false;
+
+        welcomeText.gameObject.SetActive(false);
+        cipherText.gameObject.SetActive(false);
+        inputField.gameObject.SetActive(false);
+        submitButton.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
+
+        feedbackText.text = endMessage;
+        feedbackText.color = color;
+        feedbackText.gameObject.SetActive(true);
+        retryButton.gameObject.SetActive(true);
+
+        retryButton.onClick.RemoveAllListeners();
+        retryButton.onClick.AddListener(InitializeWelcomeScreen);
+    }
+
+    private void SetButtonText(Button button, string text)
+    {
+        TextMeshProUGUI buttonText = button.GetComponentInChildren<TextMeshProUGUI>();
+        if (buttonText != null)
+        {
+            buttonText.text = text;
+        }
+    }
 }
