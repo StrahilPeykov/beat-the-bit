@@ -13,9 +13,12 @@ public class LineRendererManager : MonoBehaviour
 
     private bool isDragging;
     private Vector3 endPoint;
-    private DegreeOfNodes degree;
     private GameObject startObject;
     private GameObject endObject;
+
+    private DegreeOfNodes startNode;
+    private DegreeOfNodes endNode;
+
 
 
     /*private void Start()
@@ -98,6 +101,13 @@ public class LineRendererManager : MonoBehaviour
                     lrs.Add(clr);
 
 
+                    startNode = startObject.GetComponent<DegreeOfNodes>();
+                    endNode = endObject.GetComponent<DegreeOfNodes>();
+
+                    startNode.IncreaseDegree();
+                    endNode.IncreaseDegree();
+
+
                     Debug.Log("Correct Form!");
                     //this.enabled = false; // Disable this script if the match is correct
                 }
@@ -117,6 +127,8 @@ public class LineRendererManager : MonoBehaviour
             startObject = null;
             endObject = null;
             clr = null;
+            startNode = null;
+            endNode = null;
 
         }
 
@@ -160,6 +172,15 @@ public class LineRendererManager : MonoBehaviour
             // Remove the connection from the dictionary
             connectedLines.Remove((startObject, endObject));
             connectedLines.Remove((endObject, startObject));
+
+            startNode = startObject.GetComponent<DegreeOfNodes>();
+            endNode = endObject.GetComponent<DegreeOfNodes>();
+
+            if (startNode != null)
+                startNode.DecreaseDegree();
+
+            if (endNode != null)
+                endNode.DecreaseDegree();
 
             // Destroy the LineRenderer GameObject
             Destroy(line.gameObject);
