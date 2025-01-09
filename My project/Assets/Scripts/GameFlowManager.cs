@@ -19,7 +19,7 @@ public class GameFlowManager : MonoBehaviour
 
     [Header("Game Messages")]
     public string welcomeMessage = "Welcome to the Cipher Challenge!";
-    public string instructions = "Instructions:\n- Decrypt the cipher displayed on the screen.\n- Enter your guess in the input box.\n- Use the 'Reveal Algorithm' button for help if needed.";
+    public string instructions = "Instructions:\n- Decrypt the cipher displayed on the screen.\n- Enter your guess in the input box.\n- Use the 'Reveal Cipher' button for help if needed.";
     public string cipherMessage = "Cipher: opdtryqzcrlxpdmfwrlctllyoczxlytl";
     private string correctDecryption = "designforgamesbulgariaandromania";
 
@@ -33,8 +33,7 @@ public class GameFlowManager : MonoBehaviour
     public AudioClip timerTickAudio;
 
     [Header("Algorithm Details")]
-    public string algorithmDescription = "This is a simple substitution cipher with a static key.";
-
+    public string algorithmDescription = "The cipher is a simple Caesar cipher with a shift of 10.\n\nHow it Works:\n- Each letter is shifted by 10 places in the alphabet.\n- Example:\n  Plaintext: HELLO\n  Ciphertext: ROVVY";
 
     void Start()
     {
@@ -56,13 +55,13 @@ public class GameFlowManager : MonoBehaviour
         timerText.gameObject.SetActive(false);
         nextButton.gameObject.SetActive(true);
         retryButton.gameObject.SetActive(false);
-        revealAlgorithmButton.gameObject.SetActive(false); // Hide the button initially
-        algorithmPopup.SetActive(false); // Hide the popup initially
+        revealAlgorithmButton.gameObject.SetActive(false);
+        algorithmPopup.SetActive(false);
 
         SetButtonText(nextButton, "Next");
         SetButtonText(submitButton, "Submit");
         SetButtonText(retryButton, "Retry");
-        SetButtonText(revealAlgorithmButton, "Reveal Algorithm");
+        SetButtonText(revealAlgorithmButton, "Reveal Cipher");
 
         nextButton.onClick.RemoveAllListeners();
         nextButton.onClick.AddListener(StartGame);
@@ -116,23 +115,43 @@ public class GameFlowManager : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeToDisplay / 60);
         int seconds = Mathf.FloorToInt(timeToDisplay % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        Color greenColor;
 
         if (timeToDisplay <= 15f)
         {
             timerText.color = Color.red;
         }
-        Color greenColor;
-        if (ColorUtility.TryParseHtmlString("#20C20E", out greenColor))
-            {
-                timerText.color = greenColor;
-            }
+        else
+        {
+            if (ColorUtility.TryParseHtmlString("#20C20E", out greenColor))
+                {
+                    timerText.color = greenColor;
+                }
+        }
+
     }
 
     void ShowAlgorithmPopup()
     {
-        algorithmPopupText.text = algorithmDescription;
-        algorithmPopup.SetActive(true);
-        Invoke(nameof(HideAlgorithmPopup), 5f);
+        if (!algorithmPopup.activeSelf)
+        {
+            algorithmPopupText.text = algorithmDescription;
+            algorithmPopup.SetActive(true);
+
+            cipherText.gameObject.SetActive(false);
+            inputField.gameObject.SetActive(false);
+            submitButton.gameObject.SetActive(false);
+            feedbackText.gameObject.SetActive(false);
+        }
+        else
+        {
+            algorithmPopup.SetActive(false);
+            algorithmPopupText.text = "";
+            cipherText.gameObject.SetActive(true);
+            inputField.gameObject.SetActive(true);
+            submitButton.gameObject.SetActive(true);
+            feedbackText.gameObject.SetActive(true);
+        }
     }
     void HideAlgorithmPopup()
     {
@@ -182,6 +201,7 @@ public class GameFlowManager : MonoBehaviour
 
         retryButton.onClick.RemoveAllListeners();
         retryButton.onClick.AddListener(InitializeWelcomeScreen);
+        inputField.text = "";
     }
 
     private void SetButtonText(Button button, string text)
