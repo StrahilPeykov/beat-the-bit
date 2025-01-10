@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 10c1af49bac6b4f4897494a43709ed1a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - graphManager: {instanceID: 0}
+  - checkButton: {fileID: 8579935952878306110, guid: 9191173223167dc4d8c7b2f3089307e8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
