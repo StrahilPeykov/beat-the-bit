@@ -31,6 +31,8 @@ public class GameFlowManager : MonoBehaviour
     [Header("Audio Settings")]
     public AudioSource audioSource;
     public AudioClip timerTickAudio;
+    public AudioClip correctAnswerAudio;
+    public AudioClip wrongAnswerAudio;
 
     [Header("Algorithm Details")]
     public string algorithmDescription = "The cipher is a simple Caesar cipher with a shift of 10.\n\nHow it Works:\n- Each letter is shifted by 10 places in the alphabet.\n- Example:\n  Plaintext: HELLO\n  Ciphertext: ROVVY";
@@ -173,6 +175,7 @@ public class GameFlowManager : MonoBehaviour
         {
             feedbackText.text = "Correct! You've decrypted the message!";
             feedbackText.color = Color.green;
+            audioSource.PlayOneShot(correctAnswerAudio);
             isTimerRunning = false;
             EndGame("Congratulations! You've decrypted the cipher!", Color.green);
         }
@@ -180,6 +183,7 @@ public class GameFlowManager : MonoBehaviour
         {
             feedbackText.text = "Incorrect. Try again!";
             feedbackText.color = Color.red;
+            audioSource.PlayOneShot(wrongAnswerAudio);
             inputField.text = "";
         }
     }
