@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class DegreeOfNodesManager : MonoBehaviour
 {
+    public PointSystem pointSystem;
     [SerializeField] private GameObject nodePrefab; // Prefab for new nodes
     private List<DegreeOfNodes> nodes = new List<DegreeOfNodes>(); // List of all nodes in the scene
     private int numberOfNodes = 0;
@@ -61,6 +62,10 @@ public class DegreeOfNodesManager : MonoBehaviour
 
             blocked = true;
 
+            pointSystem.AddPoints(10);
+
+
+
         }
         else
         {
@@ -97,6 +102,8 @@ public class DegreeOfNodesManager : MonoBehaviour
             }
 
             i += 1;
+
+            pointSystem.AddPoints(20);
         }
 
     }

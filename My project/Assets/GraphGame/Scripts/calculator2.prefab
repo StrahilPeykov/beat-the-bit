@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a666723a91f474e8e9fc2da73be52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRendererPrefab: {fileID: 6025060103900047126, guid: 9aed1f97d85dc0e4e9a8684c7484d74e, type: 3}
+  lineRendererPrefab: {fileID: 8089082499880758160, guid: a64b5efb65224c244b8b3c1c7f3d5e96, type: 3}
 --- !u!114 &5599870819426142048
 MonoBehaviour:
   m_ObjectHideFlags: 0

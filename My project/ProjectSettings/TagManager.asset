@@ -44,5 +44,8 @@ TagManager:
   - name: layer2
     uniqueID: 1877769203
     locked: 0
+  - name: coinn
+    uniqueID: 1120496909
+    locked: 0
   m_RenderingLayers:
   - Default
