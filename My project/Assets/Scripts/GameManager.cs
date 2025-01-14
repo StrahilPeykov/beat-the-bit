@@ -81,9 +81,10 @@ public class GameManager
         return new LeaderboardEntry(playerName, score, mistakes, currentLevel);
     }
 
-    // Adds the player’s score to the leaderboard
+   //Adds the player’s score to the leaderboard
     public void AddScoreToLeaderboard() 
     {
         Leaderboard.Instance.SavePlayerScore();
     }
+
 }
