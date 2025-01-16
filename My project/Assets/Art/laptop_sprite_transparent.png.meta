@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      laptop_sprite_transparent_0: 5931513987088297920
+      laptop_sprite_transparent_1: 6817631876016069063
+      laptop_sprite_transparent_2: 8322003288912065225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

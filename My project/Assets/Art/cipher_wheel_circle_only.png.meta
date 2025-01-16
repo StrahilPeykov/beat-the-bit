@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cipher_wheel_circle_only_0: 7163941176687606475
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
