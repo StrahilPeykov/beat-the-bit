@@ -9,6 +9,7 @@ public class DijkstraManager : MonoBehaviour
     public List<NodeController> selectedPath = new List<NodeController>();  // Player's selected path
     public GraphManager graphManager;   // Reference to the GraphManager
     public GameObject checkButton;      // Assign the Check button in the Inspector
+    public PointSystem pointSystem;
 
     void Awake()
     {
@@ -34,6 +35,20 @@ public class DijkstraManager : MonoBehaviour
         {
             Debug.Log($"Node was added before in path:{nod.nodeName}");
         }
+    }
+    public void ClearSelectedPath() {
+        Debug.Log("Clearing selected path...");
+
+        foreach (NodeController node in selectedPath)
+        {
+            if (node != null)
+            {
+                node.ResetNode(); // Reset the node to its default state
+            }
+        }
+
+        selectedPath.Clear();
+        Debug.Log("Selected path cleared.");
     }
 
     public void OnCheckButtonPressed() {
@@ -95,6 +110,8 @@ public class DijkstraManager : MonoBehaviour
         }
 
         Debug.Log("Correct! You selected the shortest path!");
+        pointSystem.AddPoints(10);
+        graphManager.RegenerateGame();
     }
 
     public List<GameObject> CalculateShortestPath()
