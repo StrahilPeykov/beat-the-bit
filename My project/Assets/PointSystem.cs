@@ -4,7 +4,7 @@ using TMPro;
 public class PointSystem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI pointText; // Reference to the TextMeshProUGUI for displaying points
-    private int points; // Tracks the current points
+    public int points; // Tracks the current points
 
     void Start()
     {
