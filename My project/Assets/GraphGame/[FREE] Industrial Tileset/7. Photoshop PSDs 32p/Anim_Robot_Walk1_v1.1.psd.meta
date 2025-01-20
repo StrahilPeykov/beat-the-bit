@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Anim_Robot_Walk1_v1.1_0: -6628392350266382559
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

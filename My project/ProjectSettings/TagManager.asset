@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Or
+  - Probe
+  - And
+  - Input
+  - Not
   layers:
   - Default
   - TransparentFX
@@ -40,6 +45,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Wire
+    uniqueID: 513985495
+    locked: 0
+  - name: Circuit Element
+    uniqueID: 1707753091
+    locked: 0
+  - name: Connection Point
+    uniqueID: 3603740335
     locked: 0
   - name: layer2
     uniqueID: 1877769203

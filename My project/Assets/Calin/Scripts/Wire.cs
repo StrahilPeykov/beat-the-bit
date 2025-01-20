@@ -41,8 +41,10 @@ public class Wire : MonoBehaviour
                 lineRenderer.startWidth = 0.12f; 
                 lineRenderer.endWidth = 0.12f;  
 
-                lineRenderer.startColor = new Color(.167f, 0, 0.443f, 1);
-                lineRenderer.endColor = new Color(.167f, 0, 0.443f, 1);
+                // lineRenderer.startColor = new Color(.167f, 0, 0.443f, 1);
+                // lineRenderer.startColor = new Color(Mathf.Pow(0.709f, 2.2f), Mathf.Pow(0.322f, 2.2f), Mathf.Pow(0.325f, 2.2f), 1.0f);
+                lineRenderer.startColor = new Color(Mathf.Pow(0.408f, 2.2f), Mathf.Pow(0.761f, 2.2f), Mathf.Pow(0.827f, 2.2f), 1.0f);
+                lineRenderer.endColor = new Color(Mathf.Pow(0.408f, 2.2f), Mathf.Pow(0.761f, 2.2f), Mathf.Pow(0.827f, 2.2f),   1.0f);
             }
         }
     }

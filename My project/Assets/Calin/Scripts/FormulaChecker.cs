@@ -4,11 +4,17 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using UnityEngine.Events;
+
 
 
 public class FormulaChecker : MonoBehaviour
 {
+    [SerializeField] private UnityEvent pauseTimer;
+    [SerializeField] private UnityEvent unpauseTimer;
 
+
+    public PopupWindow popupWindow;
     public TextMeshProUGUI formulaText; // Reference to the TextMeshPro component
     public TextMeshProUGUI scoreText; 
     
@@ -113,16 +119,45 @@ public class FormulaChecker : MonoBehaviour
     }
 
 
+    // void OnClick()
+    // {
+    //     pauseTimer?.Invoke();
+    //     checkFormula();
+    //     unpauseTimer?.Invoke();
+    // }
     void OnClick()
     {
-        checkFormula();
+        StartCoroutine(HandleFormulaCheckFlow());
     }
+
+    IEnumerator HandleFormulaCheckFlow()
+    {
+        // Pause the timer
+        pauseTimer?.Invoke();
+
+        // Execute the initial part of checkFormula
+        formulaCopy = FormulaManager.formula.Item1;
+        if (FormulaManager.inputList.Count != FormulaManager.formula.Item2)
+        {
+            Debug.Log("Incorrect!");
+            UpdateCheckFormulaDisplay($"To make {FormulaManager.formula.Item1} \nIncorrect! Not Enough Input Gates!");
+        } else if (FormulaManager.probeCnt == 0) {
+            UpdateCheckFormulaDisplay($"To make {FormulaManager.formula.Item1} \nIncorrect! No Output Gate!");
+        } else {
+            // Call the coroutine and wait for it to finish
+            yield return StartCoroutine(CheckFormulaWithDelay());
+        }
+
+        // Unpause the timer
+        unpauseTimer?.Invoke();
+    }
+
 
     void resetInputs()
     {
         foreach (Switch input in FormulaManager.inputList)
         {
-            PauseAndSetValue(input, "0", .1f);
+            PauseAndSetValue(input, "0", .3f);
         }
     }
 
@@ -158,7 +193,7 @@ public class FormulaChecker : MonoBehaviour
             {
                 Debug.Log(input.varName);
                 // Set each value with a delay
-                yield return StartCoroutine(PauseAndSetValue(input, key.Substring(i, 1), .2f)); // 1.5 seconds delay
+                yield return StartCoroutine(PauseAndSetValue(input, key.Substring(i, 1), .35f)); // 1.5 seconds delay
                 // checkText += input.varName + " = " + key.Substring(i, 1);
                 i++;
             }
@@ -191,12 +226,12 @@ public class FormulaChecker : MonoBehaviour
         this.AddPoints(10);
         UpdateCheckFormulaDisplay("Correct!");
         
-        correctText.SetActive(true);
+        // correctText.SetActive(true);
 
         // Thread.Sleep(2000);
 
-        correctText.SetActive(false);
-
+        // correctText.SetActive(false);
+        popupWindow.ShowPopup();
         DeleteAllGates();
 
         Debug.Log("Correct!");

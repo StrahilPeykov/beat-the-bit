@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pet2001-8_animated_0: 5970984806892704480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

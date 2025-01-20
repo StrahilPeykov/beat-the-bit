@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ibm5150_animated_0: 1816357025014821693
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

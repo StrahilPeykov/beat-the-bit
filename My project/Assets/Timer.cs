@@ -68,6 +68,17 @@ public class Timer : MonoBehaviour
         }
     }
 
+    public void PauseTimer()
+    {
+        isTimerRunning = false;
+    }
+
+    // Public method to unpause the timer
+    public void UnpauseTimer()
+    {
+        isTimerRunning = true;
+    }
+
     // Helper method to update the timer display
     private void UpdateTimerDisplay()
     {
