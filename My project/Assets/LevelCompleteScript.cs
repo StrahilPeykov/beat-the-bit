@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LevelCompleteScript : MonoBehaviour
 {
-    public void OnLevelComplete(int stars)
+
+    private int stars;
+    public void OnLevelComplete()
     {
 
-        Debug.Log("aha");
-        if (LevelSelection.currLevel == LevelSelection.unlockedLevel)
+        
+        if (LevelSelection.currLevel == LevelSelection.unlockedLevel && stars == 3)
 
         {
             LevelSelection.unlockedLevel++;
@@ -24,4 +26,12 @@ public class LevelCompleteScript : MonoBehaviour
         Debug.Log("gata!");
         SceneManager.LoadScene("LevelSelection");
     }
+
+
+    public void changeStars(int number)
+    {
+        this.stars = number;
+    }
+
+
 }
