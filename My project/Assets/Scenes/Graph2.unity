@@ -226,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 453908898}
   - component: {fileID: 453908899}
+  - component: {fileID: 453908900}
   m_Layer: 0
   m_Name: DijkstraManager
   m_TagString: Untagged
@@ -260,10 +261,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f125e24257f80542b2ee98a53a2ffda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lvl: {fileID: 1052988873}
   selectedPath: []
   graphManager: {fileID: 1964613214}
   checkButton: {fileID: 2143003369}
   pointSystem: {fileID: 1050838520}
+  score: 0
+  starsGraph: 0
+--- !u!114 &453908900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453908897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5e8f8e8bbbe1f458d0aba7786dc8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &847042324
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,14 +313,14 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1964613215}
+      - m_Target: {fileID: 1052988873}
         m_TargetAssemblyTypeName: LevelCompleteScript, Assembly-CSharp
         m_MethodName: OnLevelComplete
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -503,6 +519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052988872}
+  - component: {fileID: 1052988873}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -525,6 +542,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1052988873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052988871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5e8f8e8bbbe1f458d0aba7786dc8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1131886511 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6682961981703023084, guid: e170388bfbf25d64990388d28e5be9be, type: 3}
@@ -914,8 +943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":297.200043,"yPos":236.6},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
-    to level selection","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":272.4,"yPos":81.2},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Congrats!
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":284.000031,"yPos":177.400009},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
+    to level selection","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":259.199982,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Congrats!
     You finished the game!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -928,19 +957,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1964613215}
-        m_TargetAssemblyTypeName: LevelCompleteScript, Assembly-CSharp
-        m_MethodName: OnLevelComplete
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1555708438
 Transform:
   m_ObjectHideFlags: 0
@@ -1386,34 +1403,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 22
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":546.5999,\"yPos\":94.20002},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    are graphs, and why are they magical?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179.400223,\"yPos\":405.3994},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ready!\",\"parentUIDs\":[0,18],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":682.4001,\"yPos\":264.5993},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue\",\"parentUIDs\":[7,9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":836.0003,\"yPos\":95.79987},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Can
-    we skip the lecture and get to the fun part?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":860.800354,\"yPos\":448.599365},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Can
-    I play the game now?\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":657.600037,\"yPos\":642.199951},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
-    ready for playing the game.\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":936.0002,\"yPos\":764.599731},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
-    do I interact with the nodes?\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":527.1996,\"yPos\":422.9994},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"So,
-    like a GPS for graphs?\",\"parentUIDs\":[6],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":245.599976,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Greetings,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":560.6,\"yPos\":94.20002},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    are graphs, and why are they magical?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.400253,\"yPos\":405.3994},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ready!\",\"parentUIDs\":[0,18],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":696.400146,\"yPos\":264.5993},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue\",\"parentUIDs\":[7,9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":850.000366,\"yPos\":95.79987},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Can
+    we skip the lecture and get to the fun part?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":874.8004,\"yPos\":448.599365},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Can
+    I play the game now?\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":671.6001,\"yPos\":642.199951},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
+    ready for playing the game.\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":950.000244,\"yPos\":764.599731},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
+    do I interact with the nodes?\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":541.1996,\"yPos\":422.9994},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"So,
+    like a GPS for graphs?\",\"parentUIDs\":[6],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":259.6,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Greetings,
     human! I am your friendly Graph Guide 3000, here to teach you the magic of graphs
     and algorithms.\\nPrepare to enter the realm of nodes, edges, and shortest paths.
-    Are you ready to unlock the mysteries of computer science?\\n\\n\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":690.4001,\"yPos\":328.79895},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now,
+    Are you ready to unlock the mysteries of computer science?\\n\\n\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":704.400146,\"yPos\":328.79895},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now,
     imagine you\u2019re navigating a graph and want the shortest route from Start
     to Finish. We want to introduce to you Dijkstra's algorithm, which systematically
     explores all possible paths, calculating their costs, and guarantees the shortest
-    one.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":555.2,\"yPos\":166.399246},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Great
+    one.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":569.2001,\"yPos\":166.399246},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Great
     question! A graph is like a map of connections. The dots\u2014called nodes\u2014represent
     locations, and the lines\u2014called edges\u2014represent the roads or connections
     between them.\\nGraphs help us model the real world: roads, networks, even friendships!
-    They\u2019re the ultimate tool for solving tricky problems.\\n\\n\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":856.0003,\"yPos\":161.5992},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Patience,
+    They\u2019re the ultimate tool for solving tricky problems.\\n\\n\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":870.000366,\"yPos\":161.5992},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Patience,
     my friend! You need a tiny bit of theory before diving in. Trust me, it\u2019ll
     make the game much more fun.\\nGraphs aren\u2019t just random shapes\u2014they\u2019re
     how we figure out the best way to do things: from finding the shortest route
-    home to ranking your favorite movies online\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":655.2,\"yPos\":505.599365},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Exactly!
+    home to ranking your favorite movies online\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":669.2001,\"yPos\":505.599365},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Exactly!
     It\u2019s like a super-smart GPS that doesn\u2019t just guess\u2014it calculates
-    every possibility to give you the best route.\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":908.0002,\"yPos\":667.1997},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alright,
+    every possibility to give you the best route.\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":922.000244,\"yPos\":667.1997},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alright,
     here\u2019s how the game works:\\n\\nYou\u2019ll see a graph of nodes and edges.
     Start at the green node (Start) and reach the red node (Finish).\\nEach edge
     has a number\u2014the weight\u2014which tells you how costly it is to travel
-    that road. Your job? Find the shortest path!\",\"parentUIDs\":[13,15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":984.800354,\"yPos\":837.5996},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Easy!
+    that road. Your job? Find the shortest path!\",\"parentUIDs\":[13,15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":998.8004,\"yPos\":837.5996},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Easy!
     Just click on the nodes in the order you think is correct. Once you\u2019ve picked
     your path, press the Check button to see if you\u2019re right.\\nYou can press
     Reset to clear your choices or Regenerate to create a new graph. Oh, and don\u2019t
@@ -2168,6 +2185,10 @@ PrefabInstance:
     - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Name
       value: ConversationManager (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: ScrollSpeed
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Pivot.x

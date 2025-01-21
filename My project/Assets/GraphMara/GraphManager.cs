@@ -8,7 +8,7 @@ public class GraphManager : MonoBehaviour
 {
     public GameObject nodePrefab;        // Prefab for nodes
     public int numberOfNodes = 3;        // Total number of nodes to generate
-    public Vector2 mapSize = new Vector2((float)6.6, (float)3.6); // Map boundaries
+    public Vector2 mapSize = new Vector2((float)6.5, (float)3.4); // Map boundaries
 
     public List<GameObject> nodes = new List<GameObject>(); // List to store generated nodes
     public Dictionary<(GameObject, GameObject), int> edges = new Dictionary<(GameObject, GameObject), int>(); // Edges with weights
@@ -38,102 +38,6 @@ public class GraphManager : MonoBehaviour
         ConversationManager.Instance.StartConversation(myConv);
     }
 
-    // void GenerateGraph() {
-    //     nodes.Clear();
-    //     edges.Clear();
-
-    //     float minimumDistance = 0.5f; // Set minimum distance for both X and Y axes
-    //     Debug.Log("Generating nodes...");
-
-    //     // Step 1: Generate Nodes
-    //     for (int i = 0; i < numberOfNodes; i++)
-    //     {
-    //         Vector2 randomPosition;
-    //         bool positionIsValid;
-
-    //         // Find a valid position with the minimum distance constraint
-    //         do
-    //         {
-    //             positionIsValid = true;
-    //             randomPosition = new Vector2(
-    //                 Random.Range(-mapSize.x / 2, mapSize.x / 2),
-    //                 Random.Range(-mapSize.y / 2, mapSize.y / 2)
-    //             );
-
-    //             // Check if the position satisfies the minimum distance constraint
-    //             foreach (GameObject existingNode in nodes)
-    //             {
-    //                 Vector2 existingPosition = existingNode.transform.position;
-    //                 if (Mathf.Abs(randomPosition.x - existingPosition.x) < minimumDistance &&
-    //                     Mathf.Abs(randomPosition.y - existingPosition.y) < minimumDistance)
-    //                 {
-    //                     positionIsValid = false;
-    //                     break;
-    //                 }
-    //             }
-    //         } while (!positionIsValid);
-
-    //         // Create and position the node
-    //         GameObject newNode = Instantiate(nodePrefab, randomPosition, Quaternion.identity);
-    //         newNode.name = $"Node_{i}";
-
-    //         NodeController nodeController = newNode.GetComponent<NodeController>();
-    //         if (nodeController != null)
-    //         {
-    //             nodeController.nodeName = newNode.name; // Assign the GameObject's name to nodeName
-    //             Debug.Log($"Assigned nodeName: {nodeController.nodeName} to {newNode.name}, {mapSize}"); // Log the assignment
-    //         }
-    //         else
-    //         {
-    //             Debug.LogError("NodeController is missing from the NodePrefab!");
-    //         }
-
-    //         nodes.Add(newNode);
-    //         Debug.Log($"Created {newNode.name} at {randomPosition}");
-    //     }
-
-    //     Debug.Log($"Generated {nodes.Count} nodes.");
-
-    //     // Step 2: Ensure All Nodes Are Connected (MST)
-    //     HashSet<GameObject> connectedNodes = new HashSet<GameObject>();
-    //     connectedNodes.Add(nodes[0]); // Start with the first node
-
-    //     while (connectedNodes.Count < nodes.Count)
-    //     {
-    //         GameObject currentNode = connectedNodes.ElementAt(Random.Range(0, connectedNodes.Count)); // Pick a random connected node
-    //         GameObject newNode = nodes[Random.Range(0, nodes.Count)]; // Pick a random node
-
-    //         if (!connectedNodes.Contains(newNode)) // Only connect if it's not already connected
-    //         {
-    //             int weight = Random.Range(1, 20);
-    //             edges[(currentNode, newNode)] = weight;
-    //             connectedNodes.Add(newNode);
-
-    //             // Create the edge visually
-    //             CreateEdge(currentNode, newNode, weight);
-    //         }
-    //     }
-
-    //     Debug.Log("All nodes are now connected.");
-
-    //     // Step 3: Add Additional Random Edges
-    //     for (int i = 0; i < nodes.Count; i++)
-    //     {
-    //         for (int j = i + 1; j < nodes.Count; j++)
-    //         {
-    //             if (!edges.ContainsKey((nodes[i], nodes[j])) && !edges.ContainsKey((nodes[j], nodes[i])) && Random.Range(0, 2) == 1)
-    //             {
-    //                 int weight = Random.Range(1, 20);
-    //                 edges[(nodes[i], nodes[j])] = weight;
-
-    //                 // Create the edge visually
-    //                 CreateEdge(nodes[i], nodes[j], weight);
-    //             }
-    //         }
-    //     }
-
-    //     Debug.Log($"Final graph has {edges.Count} edges.");
-    // }
     public void GenerateGraph() {
         nodes.Clear();
         edges.Clear();

@@ -6,10 +6,14 @@ public class DijkstraManager : MonoBehaviour
 {
     public static DijkstraManager Instance;  // Singleton for global access
 
+    public LevelCompleteScript lvl;
+
     public List<NodeController> selectedPath = new List<NodeController>();  // Player's selected path
     public GraphManager graphManager;   // Reference to the GraphManager
     public GameObject checkButton;      // Assign the Check button in the Inspector
     public PointSystem pointSystem;
+    public int score = 0;
+    public int starsGraph = 0;
 
     void Awake()
     {
@@ -77,6 +81,7 @@ public class DijkstraManager : MonoBehaviour
 
         // Validate the player's path
         ValidatePath(correctPath);
+
     }
 
     public void OnResetButtonPressed() {
@@ -109,11 +114,31 @@ public class DijkstraManager : MonoBehaviour
             }
         }
 
-        Debug.Log("Correct! You selected the shortest path!");
+        Debug.Log($"Correct! You selected the shortest path!stars now:{starsGraph}, {score}");
         pointSystem.AddPoints(10);
+        score++;
+        updateStarsGraph(score);
+
+        if (graphManager.numberOfNodes < 6) {
+            graphManager.numberOfNodes++;
+        }
         graphManager.RegenerateGame();
     }
 
+    public void updateStarsGraph(int score){
+        if (score == 1) {
+            starsGraph = 1;
+        }
+        if (score ==2 || score == 3) {
+            starsGraph = 2;
+        }
+        if (score >= 4) {
+            starsGraph = 3;
+        }
+
+        lvl.changeStars(starsGraph);
+
+    }
     public List<GameObject> CalculateShortestPath()
     {
         Dictionary<GameObject, int> distances = new Dictionary<GameObject, int>();
