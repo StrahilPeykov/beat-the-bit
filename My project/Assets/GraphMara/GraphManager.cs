@@ -31,7 +31,6 @@ public class GraphManager : MonoBehaviour
         regenerateButton.gameObject.SetActive(false);
         checkButton.gameObject.SetActive(false);
        // GenerateGraph();           // Generate the graph
-       
         
     }
 
