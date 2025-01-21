@@ -4091,6 +4091,8 @@ MonoBehaviour:
   levelObjects:
   - {fileID: 147450398}
   - {fileID: 976746004}
+  - {fileID: 837749134}
+  - {fileID: 695893575}
   Goldenstar: {fileID: 5199979006384268662, guid: 2e4259a1f07399a4188193229b39d593, type: 3}
 --- !u!4 &1775874857
 Transform:
