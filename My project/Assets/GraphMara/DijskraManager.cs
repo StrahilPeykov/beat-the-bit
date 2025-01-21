@@ -1,10 +1,10 @@
-
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DijkstraManager : MonoBehaviour
 {
     public static DijkstraManager Instance;  // Singleton for global access
+    public PopupWindow popupWindow;
 
     public LevelCompleteScript lvl;
 
@@ -40,7 +40,8 @@ public class DijkstraManager : MonoBehaviour
             Debug.Log($"Node was added before in path:{nod.nodeName}");
         }
     }
-    public void ClearSelectedPath() {
+    public void ClearSelectedPath()
+    {
         Debug.Log("Clearing selected path...");
 
         foreach (NodeController node in selectedPath)
@@ -55,7 +56,8 @@ public class DijkstraManager : MonoBehaviour
         Debug.Log("Selected path cleared.");
     }
 
-    public void OnCheckButtonPressed() {
+    public void OnCheckButtonPressed()
+    {
         Debug.Log("pressed button check");
         Debug.Log($"SelectedPath size: {selectedPath.Count}");
         if (selectedPath.Count == 0)
@@ -84,7 +86,8 @@ public class DijkstraManager : MonoBehaviour
 
     }
 
-    public void OnResetButtonPressed() {
+    public void OnResetButtonPressed()
+    {
         Debug.Log("Reset button pressed. Clearing selectedPath...");
 
         // Clear the selected path
@@ -114,25 +117,32 @@ public class DijkstraManager : MonoBehaviour
             }
         }
 
+        popupWindow.ShowPopup();
+
         Debug.Log($"Correct! You selected the shortest path!stars now:{starsGraph}, {score}");
         pointSystem.AddPoints(10);
         score++;
         updateStarsGraph(score);
 
-        if (graphManager.numberOfNodes < 6) {
+        if (graphManager.numberOfNodes < 6)
+        {
             graphManager.numberOfNodes++;
         }
         graphManager.RegenerateGame();
     }
 
-    public void updateStarsGraph(int score){
-        if (score == 1) {
+    public void updateStarsGraph(int score)
+    {
+        if (score == 1)
+        {
             starsGraph = 1;
         }
-        if (score ==2 || score == 3) {
+        if (score == 2 || score == 3)
+        {
             starsGraph = 2;
         }
-        if (score >= 4) {
+        if (score >= 4)
+        {
             starsGraph = 3;
         }
 

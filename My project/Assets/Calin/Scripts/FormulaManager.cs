@@ -5,6 +5,8 @@ using System.Collections.Generic;
 
 public class FormulaManager : MonoBehaviour
 {
+
+
     public TextUpdater textUpdater;
     public static List<Switch> inputList = new List<Switch>();
 
@@ -28,6 +30,7 @@ public class FormulaManager : MonoBehaviour
 
     void Start()
     {
+        FormulaGenerator.startProtocol();
         formula = FormulaGenerator.GenerateFormula();
         if (text == null)
         {
@@ -45,6 +48,10 @@ public class FormulaManager : MonoBehaviour
     {
         formula = FormulaGenerator.GenerateFormula();
         return formula.Item1;
+    }
+    public static int getStars()
+    {
+        return FormulaGenerator.getStars();
     }
 
     public static void assignInput(Switch newSwitch)

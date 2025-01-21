@@ -5,19 +5,21 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine.Events;
+using Unity.VisualScripting;
 
 
 
 public class FormulaChecker : MonoBehaviour
 {
+    public LevelCompleteScript levelComplete;
     [SerializeField] private UnityEvent pauseTimer;
     [SerializeField] private UnityEvent unpauseTimer;
 
 
     public PopupWindow popupWindow;
     public TextMeshProUGUI formulaText; // Reference to the TextMeshPro component
-    public TextMeshProUGUI scoreText; 
-    
+    public TextMeshProUGUI scoreText;
+
     public GameObject correctText; // Reference to the TextMeshPro component
     public GameObject incorrectText; // Reference to the TextMeshPro component
 
@@ -32,8 +34,9 @@ public class FormulaChecker : MonoBehaviour
 
     public static int points; // Tracks the current points
 
-    string formulaCopy;
+    public static int stars = 0;
 
+    string formulaCopy;
 
 
     // Public static method to add points  
@@ -71,6 +74,9 @@ public class FormulaChecker : MonoBehaviour
         if (formulaText != null)
         {
             formulaText.text = "To make: " + FormulaManager.getNewFormula();
+            stars = FormulaManager.getStars();
+            levelComplete.changeStars(stars);
+            Debug.Log("stars = " + stars);
         }
         else
         {
@@ -100,6 +106,7 @@ public class FormulaChecker : MonoBehaviour
     void Start()
     {
         points = 0;
+        levelComplete.changeStars(0);
 
         if (scoreText == null)
         {
@@ -141,9 +148,13 @@ public class FormulaChecker : MonoBehaviour
         {
             Debug.Log("Incorrect!");
             UpdateCheckFormulaDisplay($"To make {FormulaManager.formula.Item1} \nIncorrect! Not Enough Input Gates!");
-        } else if (FormulaManager.probeCnt == 0) {
+        }
+        else if (FormulaManager.probeCnt == 0)
+        {
             UpdateCheckFormulaDisplay($"To make {FormulaManager.formula.Item1} \nIncorrect! No Output Gate!");
-        } else {
+        }
+        else
+        {
             // Call the coroutine and wait for it to finish
             yield return StartCoroutine(CheckFormulaWithDelay());
         }
@@ -176,7 +187,7 @@ public class FormulaChecker : MonoBehaviour
         }
     }
 
-    IEnumerator CheckFormulaWithDelay() // Note: `IEnumerator` (non-generic)
+    IEnumerator CheckFormulaWithDelay() // Note: IEnumerator (non-generic)
     {
         foreach (var kvp in FormulaManager.formula.Item3)
         {
@@ -193,7 +204,7 @@ public class FormulaChecker : MonoBehaviour
             {
                 Debug.Log(input.varName);
                 // Set each value with a delay
-                yield return StartCoroutine(PauseAndSetValue(input, key.Substring(i, 1), .35f)); // 1.5 seconds delay
+                yield return StartCoroutine(PauseAndSetValue(input, key.Substring(i, 1), .5f)); // 1.5 seconds delay
                 // checkText += input.varName + " = " + key.Substring(i, 1);
                 i++;
             }
@@ -209,7 +220,7 @@ public class FormulaChecker : MonoBehaviour
             if (FormulaManager.probe.getSignal() != kvp.Value)
             {
                 UpdateCheckFormulaDisplay("To make: " + formulaCopy + '\n' + checkText + "failed!");
-                
+
 
                 Debug.Log("Incorrect!");
 
@@ -225,7 +236,7 @@ public class FormulaChecker : MonoBehaviour
         // Debug.Log(pointManager.ConvertToBinary(10));
         this.AddPoints(10);
         UpdateCheckFormulaDisplay("Correct!");
-        
+
         // correctText.SetActive(true);
 
         // Thread.Sleep(2000);

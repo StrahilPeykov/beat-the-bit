@@ -18,6 +18,10 @@ public class LevelSelection : MonoBehaviour
         {
             currLevel = 1;
             SceneManager.LoadScene("Graph2");
+        } else if (level == 2)
+        {
+            currLevel = 2;
+            SceneManager.LoadScene("LogicGates");
         }
     }
 

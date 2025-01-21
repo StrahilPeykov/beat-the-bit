@@ -1,9 +1,16 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 
 public class FormulaGenerator
 {
+
     private static int cnt = 0;
+    public static int stars = 0;
+
+    int aux = 0;
+
+
     private static List<Tuple<string, int, Dictionary<string, int>>> formulas = new List<Tuple<string, int, Dictionary<string, int>>>
     {
         // Formula 1: (A && B)
@@ -245,31 +252,49 @@ public class FormulaGenerator
     public static Tuple<string, int, Dictionary<string, int>> GenerateFormula()
     {
         int randomIndex;
-        
-        switch (cnt) {
+
+        switch (cnt)
+        {
             case 0:
                 randomIndex = rng.Next(4);
+                stars = 0;
                 break;
-            
+
             case 1:
                 randomIndex = rng.Next(4, 9);
+                stars = 1;
                 break;
-            
+
             case 2:
                 randomIndex = rng.Next(4, 9);
+                stars = 2;
                 break;
-            
+
             case 3:
                 randomIndex = rng.Next(4, 9);
+                stars = 2;
                 break;
 
             default:
                 randomIndex = rng.Next(9, formulas.Count);
+                stars = 3;
                 break;
         }
 
         cnt++;
-        
+
+        // return formulas[randomIndex];
         return formulas[randomIndex];
+    }
+
+    public static int getStars()
+    {
+        return stars;
+    }
+
+    public static void startProtocol()
+    {
+        cnt = 0;
+        stars = 0;
     }
 }

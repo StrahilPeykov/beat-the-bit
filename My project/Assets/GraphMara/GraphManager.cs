@@ -8,7 +8,7 @@ public class GraphManager : MonoBehaviour
 {
     public GameObject nodePrefab;        // Prefab for nodes
     public int numberOfNodes = 3;        // Total number of nodes to generate
-    public Vector2 mapSize = new Vector2((float)6.5, (float)3.4); // Map boundaries
+    public Vector2 mapSize = new Vector2((float)6.3, (float)3.4); // Map boundaries
 
     public List<GameObject> nodes = new List<GameObject>(); // List to store generated nodes
     public Dictionary<(GameObject, GameObject), int> edges = new Dictionary<(GameObject, GameObject), int>(); // Edges with weights
