@@ -7,7 +7,7 @@ using DialogueEditor;
 public class GraphManager : MonoBehaviour
 {
     public GameObject nodePrefab;        // Prefab for nodes
-    public int numberOfNodes = 7;        // Total number of nodes to generate
+    public int numberOfNodes = 3;        // Total number of nodes to generate
     public Vector2 mapSize = new Vector2((float)6.6, (float)3.6); // Map boundaries
 
     public List<GameObject> nodes = new List<GameObject>(); // List to store generated nodes
@@ -254,6 +254,7 @@ public class GraphManager : MonoBehaviour
     {
         // Create a new GameObject for the edge
         GameObject edge = new GameObject("Edge");
+        Color customBeige = new Color(0.823f, 0.7058f, 0.5490f);
         LineRenderer lineRenderer = edge.AddComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
         lineRenderer.SetPosition(0, startNode.transform.position);
@@ -261,8 +262,8 @@ public class GraphManager : MonoBehaviour
         lineRenderer.startWidth = 0.03f;
         lineRenderer.endWidth = 0.03f;
         lineRenderer.material = new Material(Shader.Find("Sprites/Default")); // Use a basic shader
-        lineRenderer.startColor = Color.blue;  // Set start color
-        lineRenderer.endColor = Color.blue;    // Set end color
+        lineRenderer.startColor = customBeige;  // Set start color
+        lineRenderer.endColor = customBeige;    // Set end color
         lineRenderer.GetComponent<Renderer>().sortingOrder = 0;
         extraObjects.Add(edge);
 

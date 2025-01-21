@@ -7,7 +7,6 @@ public class LevelCompleteScript : MonoBehaviour
 {
     public void OnLevelComplete(int stars)
     {
-
         Debug.Log("aha");
         if (LevelSelection.currLevel == LevelSelection.unlockedLevel)
         {
@@ -23,5 +22,4 @@ public class LevelCompleteScript : MonoBehaviour
         Debug.Log("gata!");
         SceneManager.LoadScene("LevelSelection");
     }
-
 }
