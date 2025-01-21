@@ -8,8 +8,8 @@ public class LevelCompleteScript : MonoBehaviour
     public void OnLevelComplete(int stars)
     {
 
-        Debug.Log("aha");
-        if (LevelSelection.currLevel == LevelSelection.unlockedLevel)
+
+        if (LevelSelection.currLevel == LevelSelection.unlockedLevel && stars == 3)
         {
             LevelSelection.unlockedLevel++;
             PlayerPrefs.SetInt("UnlockedLevels", LevelSelection.unlockedLevel);

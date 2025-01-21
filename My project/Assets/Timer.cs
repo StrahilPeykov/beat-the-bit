@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private UnityEvent onTimerEnd;
     [SerializeField] private AudioSource tickSound; // Reference to an AudioSource for the tick sound
 
-    private bool isTimerRunning = false;
+    public bool isTimerRunning = false;
     private float tickTimer = 1f; // Tracks time between ticks
 
     // Update is called once per frame
