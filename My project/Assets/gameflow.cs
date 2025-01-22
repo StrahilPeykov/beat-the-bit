@@ -6,6 +6,9 @@ using System;
 public class GameFlowManager : MonoBehaviour
 {
     [Header("UI Elements")]
+
+    public PopupWindow popupWindow;
+    public TextMeshProUGUI popupText;
     public TextMeshProUGUI cipherText;
     public TMP_InputField inputField;
     public Timer timerScript;
@@ -158,17 +161,23 @@ public class GameFlowManager : MonoBehaviour
         {
             pointsys.AddPoints(10);
             inputField.text = "";
-            feedbackText.text = "Nice! Just a couple of more firewalls to break!";
+
+
             // feedbackText.color = Color.green;
             audioSource.PlayOneShot(correctAnswerAudio);
 
             if (currentDifficulty < 2) // If not the last difficulty
             {
                 currentDifficulty++;
+                string plural = 3 - currentDifficulty == 1 ? "" : "s";
+                popupText.text = $"Nice! Just {3 - currentDifficulty} more firewall{plural} to break!";
+                popupWindow.ShowPopup();
                 StartGame(); // Move to the next difficulty
             }
             else
             {
+                popupText.text = "Acces Granted! Exams delayed by one week!";
+                popupWindow.ShowPopup();
                 EndGame("We're in! We hacked their network! Congrats!", Color.green);
             }
         }
