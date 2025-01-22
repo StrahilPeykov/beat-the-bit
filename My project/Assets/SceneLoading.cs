@@ -20,6 +20,7 @@ public class SceneLoading : MonoBehaviour
 
     public void QuitGame()
     {
+        PlayerPrefs.DeleteAll();
         Debug.Log("Quit Button Pressed!"); // For testing in the editor
         Application.Quit(); // Quits the application
     }
