@@ -235,7 +235,7 @@ public class GraphManager : MonoBehaviour
         textMeshPro.fontSize = 2;
         textMeshPro.alignment = TextAlignmentOptions.Center;
         textMeshPro.color = Color.white;
-        labelObject.transform.position = node.transform.position + Vector3.up * 0.1f;
+        labelObject.transform.position = node.transform.position + Vector3.up * 0.2f;
         extraObjects.Add(labelObject);
     }
 
