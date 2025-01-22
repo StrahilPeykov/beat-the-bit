@@ -14,14 +14,17 @@ public class LevelSelection : MonoBehaviour
         {
             currLevel = 0;
             SceneManager.LoadScene("GraphGame");
-        } else if (level == 1)
+        } else if (level == 1 && unlockedLevel >= 1)
         {
             currLevel = 1;
             SceneManager.LoadScene("Graph2");
-        } else if (level == 2)
+        } else if (level == 2 && unlockedLevel >= 2)
         {
             currLevel = 2;
             SceneManager.LoadScene("LogicGates");
+        } else if (level == 3 && unlockedLevel >= 3)
+        {
+            SceneManager.LoadScene("CryptographyGame");
         }
     }
 

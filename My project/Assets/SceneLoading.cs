@@ -18,5 +18,11 @@ public class SceneLoading : MonoBehaviour
         SceneManager.LoadScene("LevelSelection"); // Replace with your actual scene name
     }
 
+    public void QuitGame()
+    {
+        Debug.Log("Quit Button Pressed!"); // For testing in the editor
+        Application.Quit(); // Quits the application
+    }
+
 
 }

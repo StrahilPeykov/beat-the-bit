@@ -333,8 +333,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5602738080077169669, guid: 8d71a671802a18745878c8623a2c7b56, type: 3}
-        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
+      - m_Target: {fileID: 1358000478}
+        m_TargetAssemblyTypeName: SceneLoading, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:

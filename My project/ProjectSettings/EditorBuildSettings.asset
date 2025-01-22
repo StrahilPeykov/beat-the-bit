@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: da474bbe6d3561246aabe68e8c774c22
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: dae30dcabd5599842adf8223bb190ada
   - enabled: 1
@@ -23,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 61880e4cf7f33b84bbb4c98f4a8f297d
+  - enabled: 1
+    path: Assets/Scenes/CryptographyGame.unity
+    guid: 1c8a72c797f133b46975fa556c6799bc
   - enabled: 1
     path: Assets/Scenes/Graph2.unity
     guid: 1b7dcb5fb491e3740ae6405d34a7d2d9
