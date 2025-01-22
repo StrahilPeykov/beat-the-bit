@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cdf598817b012c4408862d1a18db1d27
+guid: 280c481542fff1a4397a831456136291
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5225422360289536603
-    second: "Design f\u0103r\u0103 titlu (4)_0"
+      213: -1778944475654567236
+    second: alphabet_final_version_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Design f\u0103r\u0103 titlu (4)_0"
+      name: alphabet_final_version_0
       rect:
         serializedVersion: 2
-        x: 836
-        y: 421
-        width: 248
-        height: 249
+        x: 0
+        y: 0
+        width: 1120
+        height: 725
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5ae07283fd648840800000000000000
-      internalID: 5225422360289536603
+      spriteID: cba4775bc6bef47e0800000000000000
+      internalID: -1778944475654567236
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Design f\u0103r\u0103 titlu (4)_0": 5225422360289536603
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

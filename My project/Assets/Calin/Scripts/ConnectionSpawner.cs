@@ -145,6 +145,9 @@ public class ConnectionSpawner : MonoBehaviour
 
     private void UpdateLineRenderer()
     {
+        if (start != null) {
+
+        
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 middlePos = new Vector3(start.transform.position.x, mousePos.y, 0);
         Vector3[] pos = { start.transform.position, middlePos, mousePos };
@@ -155,6 +158,10 @@ public class ConnectionSpawner : MonoBehaviour
         lineRenderer.startColor = new Color(Mathf.Pow(0.709f, 2.2f), Mathf.Pow(0.322f, 2.2f), Mathf.Pow(0.325f, 2.2f), 1.0f);
 
         lineRenderer.endColor = new Color(Mathf.Pow(0.709f, 2.2f), Mathf.Pow(0.322f, 2.2f), Mathf.Pow(0.325f, 2.2f), 1.0f);
+
+        } else {
+            backToZeroConnected();
+        }
     }
 
     private void Update()

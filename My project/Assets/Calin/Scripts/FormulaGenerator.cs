@@ -13,7 +13,7 @@ public class FormulaGenerator
 
     private static List<Tuple<string, int, Dictionary<string, int>>> formulas = new List<Tuple<string, int, Dictionary<string, int>>>
     {
-        // Formula 1: (A && B)
+        // Formula 0: (A && B)
         new Tuple<string, int, Dictionary<string, int>>(
             "(A && B)",
             2,
@@ -25,7 +25,7 @@ public class FormulaGenerator
                 { "11", 1 }
             }),
 
-        // Formula 2: (A || B)
+        // Formula 1: (A || B)
         new Tuple<string, int, Dictionary<string, int>>(
             "(A || B)",
             2,
@@ -37,7 +37,7 @@ public class FormulaGenerator
                 { "11", 1 }
             }),
 
-        // Formula 4: !(A && B)
+        // Formula 2: !(A && B)
         new Tuple<string, int, Dictionary<string, int>>(
             "!(A && B)",
             2,
@@ -49,7 +49,7 @@ public class FormulaGenerator
                 { "11", 0 }
             }),
 
-        // Formula 5: !(A || B)
+        // Formula 3: !(A || B)
         new Tuple<string, int, Dictionary<string, int>>(
             "!(A || B)",
             2,
@@ -61,7 +61,7 @@ public class FormulaGenerator
                 { "11", 0 }
             }),
 
-        // Formula 3: ((A && B) || C)
+        // Formula 4: ((A && B) || C)
         new Tuple<string, int, Dictionary<string, int>>(
             "((A && B) || C)",
             3,
@@ -77,7 +77,7 @@ public class FormulaGenerator
                 { "111", 1 }
             }),    
 
-        // Formula 6: A && (B || C)
+        // Formula 5: A && (B || C)
         new Tuple<string, int, Dictionary<string, int>>(
             "A && (B || C)",
             3,
@@ -93,7 +93,7 @@ public class FormulaGenerator
                 { "111", 1 }
             }),
 
-        // Formula 7: A || (B && C)
+        // Formula 6: A || (B && C)
         new Tuple<string, int, Dictionary<string, int>>(
             "A || (B && C)",
             3,
@@ -109,7 +109,7 @@ public class FormulaGenerator
                 { "111", 1 }
             }),
 
-        // Formula 8: ((A && B) && C)
+        // Formula 7: ((A && B) && C)
         new Tuple<string, int, Dictionary<string, int>>(
             "((A && B) && C)",
             3,
@@ -125,23 +125,23 @@ public class FormulaGenerator
                 { "111", 1 }
             }),
 
-        // Formula 9: A || (B || C)
+        // Formula 8: !A || (B && C)
         new Tuple<string, int, Dictionary<string, int>>(
-            "A || (B || C)",
+            "!A || (B && C)",
             3,
             new Dictionary<string, int>
             {
-                { "000", 0 },
+                { "000", 1 },
                 { "001", 1 },
                 { "010", 1 },
                 { "011", 1 },
-                { "100", 1 },
-                { "101", 1 },
-                { "110", 1 },
+                { "100", 0 },
+                { "101", 0 },
+                { "110", 0 },
                 { "111", 1 }
             }),
 
-        // Formula 10: ((A && B) && (C && D))
+        // Formula 9: ((A && B) && (C && D))
         new Tuple<string, int, Dictionary<string, int>>(
             "((A && B) && (C && D))",
             4,
@@ -165,7 +165,7 @@ public class FormulaGenerator
                 { "1111", 1 }
             }),
 
-        // Formula 11: (A || (B && C)) || D
+        // Formula 10: (A || (B && C)) || D
         new Tuple<string, int, Dictionary<string, int>>(
             "(A || (B && C)) || D",
             4,
@@ -189,7 +189,7 @@ public class FormulaGenerator
                 { "1111", 1 }
             }),
 
-        // Formula 12: A && !(B || C)
+        // Formula 11: A && !(B || C)
         new Tuple<string, int, Dictionary<string, int>>(
             "A && !(B || C)",
             3,
@@ -205,7 +205,7 @@ public class FormulaGenerator
                 { "111", 0 }
             }),
 
-        // Formula 13: !(A || (B && C))
+        // Formula 12: !(A || (B && C))
         new Tuple<string, int, Dictionary<string, int>>(
             "!(A || (B && C))",
             3,
@@ -221,7 +221,7 @@ public class FormulaGenerator
                 { "111", 0 }
             }),
 
-        // Formula 14: ((A && B) || (C && D))
+        // Formula 13: ((A && B) || (C && D))
         new Tuple<string, int, Dictionary<string, int>>(
             "((A && B) || (C && D))",
             4,
@@ -272,7 +272,7 @@ public class FormulaGenerator
 
             case 3:
                 randomIndex = rng.Next(4, 9);
-                stars = 2;
+                stars = 3;
                 break;
 
             default:

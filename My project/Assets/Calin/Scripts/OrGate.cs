@@ -107,10 +107,12 @@ public class OrGate : Movable, IGate
         if (FullyConnected)
         {
             bool newSignal = inputWireA.signal || inputWireB.signal;
-            if (newSignal != outputWire.signal)
-            {
-                outputWire.UpdateSignal(newSignal, this);
-            }
+            // if (newSignal != outputWire.signal)
+            // {
+            //     outputWire.UpdateSignal(newSignal, this);
+            // }
+            outputWire.UpdateSignal(newSignal, this);
+
         }
         else if (outputWire != null && outputWire.signal)
         {
