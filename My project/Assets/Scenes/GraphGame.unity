@@ -149,10 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 6
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":14.3999329,"yPos":-79.40082},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"continue","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":50.39995,"yPos":136.59935},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"continue","parentUIDs":[2],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":54.3999634,"yPos":341.4001},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Let
-    me try!","parentUIDs":[4],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":34.3999634,"yPos":-190.000015},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello
-    human, we need some help.  Could you give us a hand?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":39.99997,"yPos":27.1990356},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"We
-    need to connect with each other. But there is a trick. ","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":46.3999634,"yPos":217.599518},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"We
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":163.799973,"yPos":234.199142},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Continue","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":199.799973,"yPos":450.199524},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Continue","parentUIDs":[2],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":203.8,"yPos":655.000366},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Let
+    me try!","parentUIDs":[4],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":183.8,"yPos":123.600006},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello
+    human, we need some help.  Could you give us a hand?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":189.400009,"yPos":340.799042},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"We
+    need to connect with each other. But there is a trick. ","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":195.8,"yPos":531.1997},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"We
     can only function if we are connected to an odd number of computers.  In graph
     theory this is called the degree of a node. Thus, the degree of every node must
     be odd.\nWe should really get an update...","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -180,7 +180,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 15
+          m_FloatArgument: 45
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -276,25 +276,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 21
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":191.600159,"yPos":-897.7999},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"2","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":-37.2008057,"yPos":-893.800049},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"4","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":426.001221,"yPos":-890.6001},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"6","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":53.19947,"yPos":-649.800659},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok:(","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":437.201416,"yPos":-723.4009},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Yep","parentUIDs":[6],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":346.800842,"yPos":-529.8009},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Even","parentUIDs":[8],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":570.0005,"yPos":-520.2008},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Odd","parentUIDs":[8],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":640.400757,"yPos":-251.40097},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Even","parentUIDs":[12],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":379.601624,"yPos":-249.801},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Odd","parentUIDs":[12],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":622.000854,"yPos":-36.2007828},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"nothing
-    is wrong","parentUIDs":[15],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":374.8014,"yPos":-41.00058},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"number
-    of nodes can be even","parentUIDs":[15],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":101.999969,"yPos":-40.2007751},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"number
-    of nodes can be odd","parentUIDs":[15],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":96.3999939,"yPos":180.59967},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"exit
-    game","parentUIDs":[19],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":194.800049,"yPos":-1052.40015},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Timer
+  CurrentIDCounter: 22
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":255.80014,"yPos":-92.99988},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"2","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":26.999176,"yPos":-89},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"4","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":490.201233,"yPos":-85.80017},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"6","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":117.39946,"yPos":154.999512},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok:(","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":501.401459,"yPos":81.39925},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Yep","parentUIDs":[6],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":411.000671,"yPos":274.999176},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Even","parentUIDs":[8],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":634.2008,"yPos":284.599274},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Odd","parentUIDs":[8],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":704.600952,"yPos":553.399},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Even","parentUIDs":[12],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":443.8015,"yPos":554.998962},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Odd","parentUIDs":[12],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":686.20105,"yPos":768.598938},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"nothing
+    is wrong","parentUIDs":[15],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":439.001343,"yPos":763.799133},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"number
+    of nodes can be even","parentUIDs":[15],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":116.59993,"yPos":695.7989},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"number
+    of nodes can be odd","parentUIDs":[15],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":160.599976,"yPos":985.399841},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"exit
+    game","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":208,"yPos":220.599976},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Try
+    again","parentUIDs":[11],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":259.000031,"yPos":-247.599945},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Timer
     ended Human. It seems like we are not all connected properly.  How many of us
-    did you succed in connecting?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":54.7995071,"yPos":-765.600952},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[1,2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Try
-    again Human :(","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":437.201416,"yPos":-820.000366},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"HMM...
-    So, you could not connect the 7th calculator according to the rule?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":438.001465,"yPos":-649.6008},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Human, 
+    did you succed in connecting?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":118.9995,"yPos":39.1989746},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[1,2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Try
+    again Human :(","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":501.401459,"yPos":-15.2004395},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"HMM...
+    So, you could not connect the 7th calculator according to the rule?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":502.20163,"yPos":155.199341},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Human, 
     you stumbled upon an application of the Handshake Lemma.  It states that : sum
     of all degrees = 2 * (number of edges).  Do you have an even or odd number of
-    nodes?","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-27.6003036,"yPos":-512.0011},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Try
-    to answer the question one more time..","parentUIDs":[9,13,16,17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":582.000854,"yPos":-400.001373},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    nodes?","parentUIDs":[7,21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":36.59967,"yPos":292.798859},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Try
+    to answer the question one more time..","parentUIDs":[9,13,16,17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":646.2012,"yPos":404.798676},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"If
     you have an odd number of vertices, and every vertice has an odd degree, is the
-    sum of all degrees odd or even?","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":378.8017,"yPos":-164.000824},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Nice
+    sum of all degrees odd or even?","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":443.0016,"yPos":640.798767},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Nice
     one Human! By the Handshake Lemma the sum of all degrees = 2 * (number of edges),
     which is always even. But, in this example the sum of all degrees is odd. Which
-    assumptions that we made is wrong?","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":89.1999,"yPos":67.19884},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
+    assumptions that we made is wrong?","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":153.3999,"yPos":871.9986},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
     job human!  In a graph with an odd number of nodes, it is impossible for all
     nodes to have odd degrees because the sum of their degrees would be odd, which
     violates the Handshaking Lemma.\n\nYou just uncovered a contradiction proof!","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -324,6 +325,7 @@ MonoBehaviour:
   - {fileID: 1042280179}
   - {fileID: 1042280191}
   - {fileID: 1042280190}
+  - {fileID: 1042280192}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -337,18 +339,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1333493130}
-        m_TargetAssemblyTypeName: LevelCompleteScript, Assembly-CSharp
-        m_MethodName: OnLevelComplete
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -527,7 +517,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 15
+          m_FloatArgument: 45
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -618,7 +608,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 3
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &829061980
@@ -701,6 +691,7 @@ GameObject:
   - component: {fileID: 1042280179}
   - component: {fileID: 1042280191}
   - component: {fileID: 1042280190}
+  - component: {fileID: 1042280192}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -1337,6 +1328,37 @@ MonoBehaviour:
   NodeID: 19
   TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1042280192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042280169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 266941092}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 21
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1001 &1047328261
 PrefabInstance:

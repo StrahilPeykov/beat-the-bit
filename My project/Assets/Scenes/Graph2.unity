@@ -1540,40 +1540,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 22
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":235.9998,\"yPos\":94.20001},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    are graphs, and why are they magical?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-130.399765,\"yPos\":406.199432},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ready!\",\"parentUIDs\":[0,18],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":371.800171,\"yPos\":264.5993},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue\",\"parentUIDs\":[7,9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":525.4004,\"yPos\":95.7998657},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Can
-    we skip the lecture and get to the fun part?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":550.200439,\"yPos\":448.599335},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Can
-    I play the game now?\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":347.000122,\"yPos\":642.199951},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
-    ready for playing the game.\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":625.400269,\"yPos\":764.599731},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
-    do I interact with the nodes?\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":216.599411,\"yPos\":422.99942},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"So,
-    like a GPS for graphs?\",\"parentUIDs\":[6],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-65,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Greetings,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":539.999756,\"yPos\":214.199966},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    are graphs, and why are they magical?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":172.800354,\"yPos\":526.199341},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ready!\",\"parentUIDs\":[0,18],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":673.400146,\"yPos\":385.399261},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue\",\"parentUIDs\":[7,9],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":828.6002,\"yPos\":215.79982},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Can
+    we skip the lecture and get to the fun part?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":853.400146,\"yPos\":568.599243},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Can
+    I play the game now?\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":650.2001,\"yPos\":762.1998},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
+    ready for playing the game.\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":928.6001,\"yPos\":883.799438},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
+    do I interact with the nodes?\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":519.799438,\"yPos\":542.999268},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"So,
+    like a GPS for graphs?\",\"parentUIDs\":[6],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":238.2001,\"yPos\":142.000076},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Greetings,
     human! I am your friendly Graph Guide 3000, here to teach you the magic of graphs
     and algorithms.\\nPrepare to enter the realm of nodes, edges, and shortest paths.
-    Are you ready to unlock the mysteries of computer science?\\n\\n\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":379.800171,\"yPos\":328.798981},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now,
+    Are you ready to unlock the mysteries of computer science?\\n\\n\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":684.6002,\"yPos\":449.598938},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now,
     imagine you\u2019re navigating a graph and want the shortest route from Start
     to Finish. We want to introduce to you Dijkstra's algorithm, which systematically
     explores all possible paths, calculating their costs, and guarantees the shortest
-    one.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":244.5999,\"yPos\":166.399246},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Great
+    one.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":547.7999,\"yPos\":286.39917},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Great
     question! A graph is like a map of connections. The dots\u2014called nodes\u2014represent
     locations, and the lines\u2014called edges\u2014represent the roads or connections
     between them.\\nGraphs help us model the real world: roads, networks, even friendships!
-    They\u2019re the ultimate tool for solving tricky problems.\\n\\n\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":545.4004,\"yPos\":161.5992},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Patience,
+    They\u2019re the ultimate tool for solving tricky problems.\\n\\n\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":848.600342,\"yPos\":281.599121},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Patience,
     my friend! You need a tiny bit of theory before diving in. Trust me, it\u2019ll
     make the game much more fun.\\nGraphs aren\u2019t just random shapes\u2014they\u2019re
     how we figure out the best way to do things: from finding the shortest route
-    home to ranking your favorite movies online\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":344.6001,\"yPos\":505.599457},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Exactly!
+    home to ranking your favorite movies online\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":647.800049,\"yPos\":625.599365},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Exactly!
     It\u2019s like a super-smart GPS that doesn\u2019t just guess\u2014it calculates
-    every possibility to give you the best route.\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":597.400269,\"yPos\":667.1997},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alright,
-    here\u2019s how the game works:\\n\\nYou\u2019ll see a graph of nodes and edges.
+    every possibility to give you the best route.\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":900.6001,\"yPos\":787.9995},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alright,
+    here\u2019s how the game works:\\nYou\u2019ll see a graph of nodes and edges.
     Start at the green node (Start) and reach the red node (Finish).\\nEach edge
     has a number\u2014the weight\u2014which tells you how costly it is to travel
-    that road. Your job? Find the shortest path!\",\"parentUIDs\":[13,15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":674.200439,\"yPos\":837.5996},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Easy!
-    Just click on the nodes in the order you think is correct. Once you\u2019ve picked
-    your path, press the Check button to see if you\u2019re right.\\nYou can press
+    that road. Find the shortest path!\",\"parentUIDs\":[13,15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":977.400757,\"yPos\":958.3992},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Just
+    click on the nodes in the order you think is correct. Once you\u2019ve picked
+    your path, press the Check button to see if you\u2019re right. You can press
     Reset to clear your choices or Regenerate to create a new graph. Oh, and don\u2019t
     forget\u2014there\u2019s a timer, so think fast! Also, the more paths you solve
-    correctly, the higher your score climbs. Ready to find the shortest path? Let
-    the game begin!\\n\\n\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    correctly, the higher your score climbs. Let the game begin!\\n\\n\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -1598,67 +1597,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1964613214}
-        m_TargetAssemblyTypeName: GraphManager, Assembly-CSharp
-        m_MethodName: GenerateGraph
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2143003369}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1220809178}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2072240336}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1131886511}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: StartTimer
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 60
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1966374662
 Transform:
   m_ObjectHideFlags: 0
@@ -1782,7 +1721,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   NodeID: 4
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!4 &2037541240
@@ -1816,7 +1755,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 1
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &2037541243
@@ -1847,7 +1786,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 0
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 4278520591868924634, guid: 2fbc95a6baa693147a27b248ebd27fe3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2037541244
@@ -1866,7 +1805,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 7
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 4278520591868924634, guid: a0248653d784d384eaad6b826875eb22, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2037541245
@@ -1885,7 +1824,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 6
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 4278520591868924634, guid: a0248653d784d384eaad6b826875eb22, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2037541246
@@ -1904,7 +1843,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 5
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &2037541248
@@ -1923,8 +1862,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 18
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4278520591868924634, guid: a0248653d784d384eaad6b826875eb22, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2037541249
 MonoBehaviour:
@@ -1942,7 +1881,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 17
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &2037541250
@@ -1961,8 +1900,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 16
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4278520591868924634, guid: a0248653d784d384eaad6b826875eb22, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2037541251
 MonoBehaviour:
@@ -1980,7 +1919,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 15
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &2037541252
@@ -1999,8 +1938,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 14
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4278520591868924634, guid: a0248653d784d384eaad6b826875eb22, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2037541253
 MonoBehaviour:
@@ -2018,7 +1957,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 13
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &2037541254
@@ -2037,7 +1976,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 9
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &2037541255
@@ -2056,7 +1995,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 8
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &2037541256
@@ -2075,7 +2014,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 20
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1001 &2049581363
