@@ -875,6 +875,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108543728}
   m_CullTransparentMesh: 1
+--- !u!1001 &196342501
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.071189076
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5486832
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.902952
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508963233331414880, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8483489450760514314, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+      propertyPath: m_Name
+      value: SoundDialogue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+--- !u!114 &196342502 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8850738292413678910, guid: 82e8846585bc70f45a766e88136797c8, type: 3}
+  m_PrefabInstance: {fileID: 196342501}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2b149cc5bef7843b1d876219dfd0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &201859160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2703,72 +2771,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 33
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":682.8002,\"yPos\":136.200073},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Skip
-    Dialogue.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":78.7997742,\"yPos\":184.600037},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"See
-    dialogue.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":403.799866,\"yPos\":478.599976},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Great!
-    Let's start then!\",\"parentUIDs\":[4],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":667.8002,\"yPos\":725.5994},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Fine...\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":915.8003,\"yPos\":588.5994},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Play
-    the game!\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":948.800537,\"yPos\":336.599945},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh
-    :(\",\"parentUIDs\":[10],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1205.8,\"yPos\":196.6},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[12],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1204.80029,\"yPos\":472.599854},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Start
-    Game!\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1469.8,\"yPos\":469.599854},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue
-    with boring theory...\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1374.79956,\"yPos\":803.5994},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ok,
-    I get it, but how do I actually play the game?\",\"parentUIDs\":[17,18],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":145.799957,\"yPos\":367.600067},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ok,
-    boring. Whats the game about?\",\"parentUIDs\":[22],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1384.7998,\"yPos\":1022.6004},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue...\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1686.7998,\"yPos\":803.5994},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ok
-    but what is the point of the game?\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1773.7998,\"yPos\":536.599548},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
-    do I check my formula?\\n\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1710.7998,\"yPos\":314.6},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
-    excited!\",\"parentUIDs\":[29],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":829.6006,\"yPos\":29.6000366},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Start
-    the game! (for real this time)\",\"parentUIDs\":[31],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":331.799957,\"yPos\":155.6},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Choose
-    your fate...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":393.799866,\"yPos\":371.599945},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"In
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":328.201172,\"yPos\":106.600266},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Skip
+    Dialogue.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-275.800232,\"yPos\":155.00029},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"See
+    dialogue.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":49.199646,\"yPos\":449.000183},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Great!
+    Let's start then!\",\"parentUIDs\":[4],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":313.201172,\"yPos\":695.999634},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Fine...\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":561.2012,\"yPos\":558.999268},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Play
+    the game!\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":594.2013,\"yPos\":307.0002},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh
+    :(\",\"parentUIDs\":[10],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":851.2002,\"yPos\":167.000275},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[12],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":804.6001,\"yPos\":460.600464},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Start
+    Game!\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1115.19922,\"yPos\":440.000366},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue
+    with boring theory...\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1016.99963,\"yPos\":773.999634},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ok,
+    I get it, but how do I actually play the game?\",\"parentUIDs\":[17,18],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-208.800476,\"yPos\":338.000244},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ok,
+    boring. Whats the game about?\",\"parentUIDs\":[22],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1030.19946,\"yPos\":993.000854},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue...\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1331.39917,\"yPos\":773.999634},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ok
+    but what is the point of the game?\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1419.199,\"yPos\":506.999451},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
+    do I check my formula?\\n\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1356.19922,\"yPos\":285.000153},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
+    excited!\",\"parentUIDs\":[29],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":475.001465,\"yPos\":0.0004272461},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Start
+    the game! (for real this time)\",\"parentUIDs\":[31],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-24.40039,\"yPos\":126.000168},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Choose
+    your fate...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":null,\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":38.39984,\"yPos\":342.000122},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"In
     this game, you\u2019re going to create circuits with gates, just like the ones
-    used in real computers! \",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":529.8,\"yPos\":536.599548},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hold
+    used in real computers! \",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175.200134,\"yPos\":506.999451},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hold
     your horses! Before actually playing the game, you neet to get familiarized with
-    some basic logic concepts.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":929.8008,\"yPos\":713.5994},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Firstly,
+    some basic logic concepts.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":575.2014,\"yPos\":683.999634},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Firstly,
     variables.\\nThink of a variable like a box that holds a value. This value can
     either be 1 (true) or 0 (false). These variables are the building blocks of your
-    logic circuits. They are noted with consecutive letters (e.g., A, B, C, D).\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":924.8003,\"yPos\":451.599854},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ha!
-    You thought! We're not done with the theory yet! \",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":963.800537,\"yPos\":186.6},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Before
+    logic circuits. They are noted with consecutive letters (e.g., A, B, C, D).\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":570.20105,\"yPos\":422.000244},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ha!
+    You thought! We're not done with the theory yet! \",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":609.201538,\"yPos\":157.00029},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Before
     playing, you first need to understand how the logic gates that you're going to
-    use, work.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1252.79956,\"yPos\":313.599976},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You're
+    use, work.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":898.1996,\"yPos\":284.000153},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You're
     going to use 3 logic gates:\\n\u2022 (&&) And gate - with 2 inputs, it is true
     only if both its inputs are true (have value 1)\\n\u2022 (||) Or gate - with
     2 inputs, it is true only if one or both its inputs are true (have value 1)\\n\u2022
-    (!) Not gate - with 1 input, it is true only if its input is false (0)\\n\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1206.8,\"yPos\":624.5994},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ha!
+    (!) Not gate - with 1 input, it is true only if its input is false (0)\\n\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":853.000244,\"yPos\":594.9994},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ha!
     Tricked you again. This is the last piece of theory though. \\nThe other types
     of gates you're gonna use are the input and output gates:\\n\u2022 Input gate
     - corresponds to a variable and is a button which you can press to set the value
     of the variable to true or false (1 or 0)\\n\u2022 Output gate - which lights
     up if it receives a true (1) value or is off if it receives a false (0) value
-    (like a lightbulb).\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1514.7998,\"yPos\":615.5994},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    (like a lightbulb).\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1160.199,\"yPos\":585.9994},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
     a nerd...Anyways, the other types of gates you're gonna use are the input and
     output gates:\\n\u2022 Input gate - corresponds to a variable and is a button
     which you can press to set the value of the variable to true or false (1 or 0)\\n\u2022
     Output gate - which lights up if it receives a true (1) value or is off if it
-    receives a false (0) value (like a lightbulb).\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1350.79956,\"yPos\":902.5999},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
+    receives a false (0) value (like a lightbulb).\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":996.1996,\"yPos\":870.600342},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
     start building your circuit, you\u2019ll see buttons at the bottom of the screen.
     These buttons represent different gates. Click on one to spawn the gate you want
     in your workspace.\\nIf you decide you don\u2019t need a gate, you can right-click
     on it to remove it. It\u2019s like clearing up your workspace when you make a
-    mistake!\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":107.7999,\"yPos\":265.600067},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hello
+    mistake!\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-246.8006,\"yPos\":236.000153},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hello
     Human! Let's start with a question: Why do computers need logic gates? Well,
     computers deal with a lot of data, and that data is represented as binary numbers
     (like 1s and 0s). Logic gates are like the 'decision-makers' of a computer. They
     take one or more inputs and produce an output based on simple rules. By combining
     many gates, a computer can perform complex tasks, like adding numbers, running
     games, or even running a website! So, logic gates help computers process information
-    and make decisions quickly and accurately.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1656.7998,\"yPos\":915.5999},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Next,
+    and make decisions quickly and accurately.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1302.19922,\"yPos\":886},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Next,
     let\u2019s talk about how to connect your gates to create the logic circuit.\\nYou\u2019ll
     notice some gray connection points on the gates. These represent the output.
     The output is the result of the logic operation based on the inputs.\\nThen,
     there are white connection points on the other gates. These represent the inputs.
     To make the circuit work, you need to drag wires from the gray connection points
     (outputs) to the white connection points (inputs). This tells the circuit how
-    to pass the values from one gate to another.\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1762.7998,\"yPos\":660.599548},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+    to pass the values from one gate to another.\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1408.19922,\"yPos\":630.999756},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
     have 2 minutes to make as many logic circuits as possibe, in the top part of
     the screen you will be given logical formulas and you need to make as many equivalent
-    logic circuits as possible!\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1729.7998,\"yPos\":403.599823},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"When
+    logic circuits as possible!\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1375.19922,\"yPos\":374.000061},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"When
     you're ready, click the \u2018Check Formula\u2019 button in the bottom right
     corner to see if your circuit matches the logic formula. If it does, you'll move
     on to the next formula! If not, try again. Make sure all your connections are
-    correct!\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1142.7998,\"yPos\":-22.3999634},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
+    correct!\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":788.2002,\"yPos\":-51.9996948},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"If
     you ever need help or more information about the gates and how to connect them,
     just press the button in the top-right corner. It will give you detailed instructions
     and tips to guide you! Good luck!\",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
@@ -4200,8 +4268,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   NodeID: 1
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466919
@@ -4220,8 +4300,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466920
 MonoBehaviour:
@@ -4239,8 +4319,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 4
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466921
 MonoBehaviour:
@@ -4256,9 +4336,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 3
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466922
@@ -4277,8 +4369,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 14
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466923
 MonoBehaviour:
@@ -4294,9 +4386,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 13
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466924
@@ -4315,8 +4419,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 12
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466925
 MonoBehaviour:
@@ -4332,9 +4436,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 11
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466926
@@ -4353,8 +4469,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 10
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466927
 MonoBehaviour:
@@ -4370,9 +4486,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 9
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466928
@@ -4391,8 +4519,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 8
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466929
 MonoBehaviour:
@@ -4408,9 +4536,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 7
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466930
@@ -4429,8 +4569,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 6
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466931
 MonoBehaviour:
@@ -4446,9 +4586,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 5
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466932
@@ -4467,8 +4619,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 20
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466933
 MonoBehaviour:
@@ -4484,9 +4636,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 19
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466934
@@ -4505,8 +4669,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 18
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466935
 MonoBehaviour:
@@ -4524,8 +4688,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 17
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466936
 MonoBehaviour:
@@ -4541,9 +4705,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 16
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466937
@@ -4560,9 +4736,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 15
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466938
@@ -4579,9 +4767,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 23
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466939
@@ -4600,8 +4800,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 22
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466941
 MonoBehaviour:
@@ -4619,8 +4819,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 27
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466942
 MonoBehaviour:
@@ -4636,9 +4836,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 26
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466943
@@ -4657,8 +4869,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 25
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466944
 MonoBehaviour:
@@ -4674,9 +4886,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 24
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466945
@@ -4778,8 +5002,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   NodeID: 32
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466946
@@ -4798,8 +5034,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 31
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466947
 MonoBehaviour:
@@ -4815,9 +5051,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 30
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1204466948
@@ -4836,8 +5084,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 29
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 4853014523439969978, guid: 4616f84857afc014f813acb9f5c98efa, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1204466949
 MonoBehaviour:
@@ -4853,9 +5101,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 196342502}
+        m_TargetAssemblyTypeName: DialogueSound, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 28
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1 &1204801484
@@ -5528,11 +5788,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_fontSize
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_margin.x
-      value: -163.849
+      value: -133.32974
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_margin.z
@@ -5544,7 +5804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_fontSizeMax
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_fontSizeMin
@@ -5584,19 +5844,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413311, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0.25
+      value: 5.319
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413311, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 31.25
+      value: 42.795
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413311, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.125
+      value: 2.4090042
       objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413311, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.091
+      value: 5.8219986
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Name
@@ -5696,47 +5956,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755395677323, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 380.81
+      value: 434.1
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755395677323, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 135.99
+      value: 160.21
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755395677323, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755395677323, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755395677323, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -21.99
+      value: 4.66
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755395677323, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -75.909
+      value: -59.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112057, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755397112059, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.49999994
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 40
+      value: 50.645
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 40
+      value: 48.179
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 60.199997
+      value: 37.554
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5
+      value: 8.36
       objectReference: {fileID: 0}
     - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_textAlignment
@@ -7608,7 +7880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":107.999985,"yPos":252.200012},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Exit","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":102.199982,"yPos":88.3999939},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Congrats!
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":216.600021,"yPos":185.800018},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Exit","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":210.800018,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Congrats!
     Goodbye!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Nostradamus","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -7621,43 +7893,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1204801486}
-        m_TargetAssemblyTypeName: EndGame, Assembly-CSharp
-        m_MethodName: OnEndGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1916871531}
-        m_TargetAssemblyTypeName: FormulaChecker, Assembly-CSharp
-        m_MethodName: DeleteAllGates
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1393720658}
-        m_TargetAssemblyTypeName: LevelCompleteScript, Assembly-CSharp
-        m_MethodName: OnLevelComplete
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1929491613
 Transform:
   m_ObjectHideFlags: 0
@@ -8160,3 +8396,4 @@ SceneRoots:
   - {fileID: 1998700013}
   - {fileID: 664186455}
   - {fileID: 1393720659}
+  - {fileID: 196342501}
