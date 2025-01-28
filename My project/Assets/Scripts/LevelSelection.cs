@@ -14,6 +14,8 @@ public class LevelSelection : MonoBehaviour
         {
             currLevel = 0;
             SceneManager.LoadScene("GraphGame");
+            // SceneManager.LoadScene("LogicGates");
+
         }
         else if (level == 1 && unlockedLevel >= 1)
         {
@@ -24,7 +26,8 @@ public class LevelSelection : MonoBehaviour
         {
             currLevel = 2;
             SceneManager.LoadScene("LogicGates");
-        } else if (level == 3 && unlockedLevel >= 3)
+        }
+        else if (level == 3 && unlockedLevel >= 3)
         {
             currLevel = 3;
             SceneManager.LoadScene("CryptographyGame");
@@ -50,7 +53,7 @@ public class LevelSelection : MonoBehaviour
                     Debug.Log(stars);
                     for (int j = 0; j < stars; j++)
                     {
-                        
+
                         levelObjects[i].stars[j].sprite = Goldenstar;
                     }
                 }

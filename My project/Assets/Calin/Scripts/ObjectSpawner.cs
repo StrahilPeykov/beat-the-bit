@@ -19,9 +19,13 @@ public class ObjectSpawner : MonoBehaviour
                 Debug.Log("probe cnt == " + FormulaManager.getProbeCount());
                 break;
             case ("Input"):
-                GameObject gameObject = Instantiate(prefab, new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0), Quaternion.identity);
+            if (FormulaManager.inputList.Count < 26) {
+                    GameObject gameObject = Instantiate(prefab, new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0), Quaternion.identity);
+                    Debug.Log("intra");
+                    FormulaManager.assignInput(gameObject.GetComponent<Switch>());
+                }
+                Debug.Log("num of inputs " + FormulaManager.inputList.Count);
 
-                FormulaManager.assignInput(gameObject.GetComponent<Switch>());
                 break;
             default:
 
