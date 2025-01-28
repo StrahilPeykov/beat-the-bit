@@ -131,7 +131,7 @@ public class GameFlowManager : MonoBehaviour
         inputField.gameObject.SetActive(true);
         submitButton.gameObject.SetActive(true);
         feedbackText.gameObject.SetActive(true);
-        timerScript.StartTimer(60);
+        timerScript.StartTimer(90);
         feedbackText.text = "";
     }
 

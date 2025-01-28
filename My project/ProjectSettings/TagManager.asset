@@ -9,6 +9,8 @@ TagManager:
   - And
   - Input
   - Not
+  - ProbeLCM
+  - InputLCM
   layers:
   - Default
   - TransparentFX
